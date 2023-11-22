@@ -21,7 +21,7 @@ Text appText(
 }) {
   return Text(
     data,
-    style: GoogleFonts.mulish(
+    style: GoogleFonts.poppins(
       fontSize: fontSize ?? 14,
       color: color,
       fontWeight: fontWeight,

@@ -9,4 +9,5 @@ class AppColors {
   static const fPINK_COLOR = Color(0xffFA56CC);
   static const fPURPLE_COLOR = Color(0xff8B39F3);
   static const fYELLOW_COLOR = Color(0xffF2B432);
+  static const fGREY_COLOR = Color(0xffF0F0F1);
 }

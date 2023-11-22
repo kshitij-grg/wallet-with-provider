@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.fSECONDARY_COLOR,
+      backgroundColor: AppColors.fPRIMARY_DARK_COLOR,
       body: SafeArea(
         child: SizedBox(
           width: Dimensions(context).width,
@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   visible: false,
                   child: Lottie.asset(
                     lottieLoading,
-                    width: Dimensions(context).width / 5,
+                    width: Dimensions(context).width / 2,
                   ),
                 ),
               ),
@@ -45,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 padding: const EdgeInsets.only(bottom: 50),
                 child: Lottie.asset(
                   lottieLoading,
-                  width: Dimensions(context).width / 5,
+                  width: Dimensions(context).width / 2,
                 ),
               ),
             ],
@@ -66,7 +66,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void startTimer() {
-    Timer(const Duration(seconds: 4), () {
+    Timer(const Duration(seconds: 2), () {
       navigateUser();
     });
   }
