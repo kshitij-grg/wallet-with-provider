@@ -1,4 +1,5 @@
 class Routes {
-  static const String loginRoute = '/login';
-  static const String splashRoute = '/splash';
+  static const String loginScreenRoute = '/login_screen';
+  static const String splashScreenRoute = '/splash_screen';
+  static const String registerScreenRoute = '/register_screen';
 }

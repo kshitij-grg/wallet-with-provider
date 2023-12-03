@@ -18,6 +18,7 @@ Text appText(
   double? fontSize,
   Color? color,
   FontWeight? fontWeight,
+  TextAlign? textAlign,
 }) {
   return Text(
     data,
@@ -26,5 +27,6 @@ Text appText(
       color: color,
       fontWeight: fontWeight,
     ),
+    textAlign: textAlign,
   );
 }

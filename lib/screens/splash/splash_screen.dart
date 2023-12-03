@@ -2,12 +2,12 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_online_shop/util/colors.dart';
-import 'package:flutter_online_shop/util/images.dart';
-import 'package:flutter_online_shop/util/lotties.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../../routes.dart';
 import '../../../util/dimensions.dart';
+import '../../../util/images.dart';
+import '../../../util/lotties.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -61,13 +61,9 @@ class _SplashScreenState extends State<SplashScreen> {
     startTimer();
   }
 
-  void navigateUser() {
-    Navigator.pushReplacementNamed(context, Routes.loginRoute);
-  }
-
   void startTimer() {
     Timer(const Duration(seconds: 2), () {
-      navigateUser();
+      Navigator.pushReplacementNamed(context, Routes.loginScreenRoute);
     });
   }
 }

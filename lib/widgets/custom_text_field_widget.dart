@@ -28,7 +28,7 @@ class CustomTextFieldWidget extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.all(10),
-        fillColor: AppColors.fGREY_COLOR,
+        fillColor: AppColors.fLIGHT_GREY_COLOR,
         filled: true,
         border: const OutlineInputBorder(
           borderSide: BorderSide.none,
@@ -41,7 +41,9 @@ class CustomTextFieldWidget extends StatelessWidget {
           padding: const EdgeInsets.only(right: 10),
           child: isForPassword == true
               ? suffixWidget
-              : SvgPicture.asset(suffixIcon ?? ''),
+              : suffixIcon != null
+                  ? SvgPicture.asset(suffixIcon ?? '')
+                  : null,
         ),
         suffixIconConstraints: const BoxConstraints(),
       ),
